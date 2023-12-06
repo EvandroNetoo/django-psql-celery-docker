@@ -1,0 +1,40 @@
+services:
+    django:
+        container_name: django
+        build: .
+        command: python manage.py runserver 0.0.0.0:8000
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./app:/app
+        depends_on:
+            - psql
+            - redis
+        env_file:
+            - ./dotenv_files/dev.env
+
+    psql:
+        container_name: psql
+        image: postgres:16
+        volumes:
+            - /var/lib/postgresql/data/
+        environment:
+            - "POSTGRES_HOST_AUTH_METHOD=trust"
+        env_file:
+            - ./dotenv_files/dev.env
+
+    celery:
+        container_name: celery
+        build: .
+        command: celery -A core worker -E -l INFO
+        volumes:
+            - ./app:/app
+        env_file:
+            - ./dotenv_files/dev.env
+        depends_on:
+            - django
+            - redis
+
+    redis:
+        container_name: redis
+        image: "redis:alpine"

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans 'Login' %}{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+
+        <div class="col-lg-6">
+            <h1 class="text-center">{% trans 'Login' %}</h1>
+            <hr>
+
+            {% include 'partials/messages.html' %}
+
+            <form action="{% url 'login' %}" method="post">
+                
+                {% csrf_token %}
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="username_email" name="username_email" placeholder="">
+                    <label for="username">{% trans 'Username or Email address' %}</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="">
+                    <label for="password">{% trans 'Password' %}</label>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xl-5 d-flex align-items-center justify-content-center">
+                        <p  style="margin: 0;">
+                            <a href="{% url 'home' %}">{% trans "Forgot my password" %} →</a>
+                        </p>
+                    </div>
+                    <div class="col-xl-2 text-center">
+                        <button class="btn btn-outline-success" type="submit">{% trans 'Login' %}</button>
+                    </div>
+                    <div class="col-xl-5 d-flex align-items-center justify-content-center">
+                        <p style="margin: 0;">
+                            {% trans "Don't have an account?" %}
+                            <a href="{% url 'register' %}">{% trans 'Sign up' %} →</a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="col-3"></div>
+    </div>
+</div>
+
+{% endblock %}

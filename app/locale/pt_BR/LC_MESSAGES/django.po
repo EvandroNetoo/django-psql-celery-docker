@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-22 14:40-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps/authentication/admin.py:20 apps/authentication/admin.py:51
+msgid "Login informations"
+msgstr "Informações de login"
+
+#: apps/authentication/admin.py:30
+msgid "Permissions"
+msgstr "Permissões"
+
+#: apps/authentication/admin.py:40
+msgid "Important dates"
+msgstr "Datas importantes"
+
+#: apps/authentication/apps.py:8
+msgid "authetication"
+msgstr "autenticação"
+
+#: apps/authentication/decorators.py:16
+msgid "To access this page you must not be logged in."
+msgstr "Para acessar essa página você não deve estar logado."
+
+#: apps/authentication/decorators.py:34
+msgid "To access this page you must be logged in."
+msgstr "Para acessar essa página você deve estar logado."
+
+#: apps/authentication/forms.py:17 apps/authentication/forms.py:50
+#: apps/authentication/templates/login.html:30
+#: apps/authentication/templates/register.html:73
+#: apps/authentication/templates/register.html:85
+msgid "Password"
+msgstr "Senha"
+
+#: apps/authentication/forms.py:30 apps/authentication/forms.py:63
+msgid "Confirm password"
+msgstr "Confirmar senha"
+
+#: apps/authentication/forms.py:40 apps/authentication/forms.py:77
+msgid "Passwords do not match."
+msgstr "Senhas não coincidem."
+
+#: apps/authentication/models.py:12
+msgid "username"
+msgstr "nome de usuário"
+
+#: apps/authentication/models.py:17
+msgid "email address"
+msgstr "endereço de email"
+
+#: apps/authentication/models.py:24
+msgid "active"
+msgstr "ativo"
+
+#: apps/authentication/models.py:28
+msgid "staff status"
+msgstr "status de staff"
+
+#: apps/authentication/models.py:32
+msgid "superuser status"
+msgstr "status de superusário"
+
+#: apps/authentication/models.py:37
+msgid "date joined"
+msgstr "data de entrada"
+
+#: apps/authentication/models.py:49
+msgid "User"
+msgstr "Usuário"
+
+#: apps/authentication/models.py:50
+msgid "Users"
+msgstr "Usuários"
+
+#: apps/authentication/templates/login.html:4
+#: apps/authentication/templates/login.html:14
+#: apps/authentication/templates/login.html:41
+msgid "Login"
+msgstr "Login"
+
+#: apps/authentication/templates/login.html:25
+msgid "Username or Email address"
+msgstr "Nome de usuário ou Endereço de email"
+
+#: apps/authentication/templates/login.html:37
+msgid "Forgot my password"
+msgstr "Esqueci minha senha"
+
+#: apps/authentication/templates/login.html:45
+msgid "Don't have an account?"
+msgstr "Não tem uma conta?"
+
+#: apps/authentication/templates/login.html:46
+#: apps/authentication/templates/register.html:115
+msgid "Sign up"
+msgstr "Cadastrar"
+
+#: apps/authentication/templates/register.html:4
+#: apps/authentication/templates/register.html:14
+msgid "Register"
+msgstr "Cadastrar"
+
+#: apps/authentication/templates/register.html:29
+#: apps/authentication/templates/register.html:41
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: apps/authentication/templates/register.html:51
+#: apps/authentication/templates/register.html:63
+msgid "Email adress"
+msgstr "Endereço de email"
+
+#: apps/authentication/templates/register.html:95
+#: apps/authentication/templates/register.html:107
+msgid "Confirm Password"
+msgstr "Confirmar Senha"
+
+#: apps/authentication/templates/register.html:119
+msgid "Already have an account?"
+msgstr "Já tem uma conta?"
+
+#: apps/authentication/templates/register.html:120
+msgid "Sign in"
+msgstr "Entrar"
+
+#: apps/authentication/validators.py:6
+msgid "Do not use whitespaces."
+msgstr "Não utilize espaços."
+
+#: apps/authentication/validators.py:8
+msgid "Use at least one special character."
+msgstr "Use pelo menos um caractere especial."
+
+#: apps/authentication/validators.py:10
+msgid "Use at least one uppercase letter."
+msgstr "Use pelo menos uma letra maiúscula."
+
+#: apps/authentication/validators.py:12
+msgid "Use at least one lowercase letter."
+msgstr "Use pelo menos uma letra minúscula."
+
+#: apps/authentication/validators.py:14
+msgid "Use at least one number."
+msgstr "Use pelo menos um número."
+
+#: apps/authentication/validators.py:19
+msgid "The minimum length is 6 characters."
+msgstr "O tamanho mínimo é 6 caracteres."
+
+#: apps/authentication/views.py:41
+msgid "A server error occurred."
+msgstr "Ocorreu um erro no servidor."
+
+#: apps/authentication/views.py:57
+msgid "User activated successfully."
+msgstr "Usuário ativado com sucesso."
+
+#: apps/authentication/views.py:60
+msgid "Invalid account activation link."
+msgstr "Link de ativação de conta inválido."
+
+#: apps/authentication/views.py:82
+msgid "User not activated, an email was sent with the activation link."
+msgstr "Usuário não ativado, foi enviado um email com o link de ativação"
+
+#: apps/authentication/views.py:88
+msgid "Invalid credentials."
+msgstr "Credenciais inválidas."
+
+#: apps/authentication/views.py:97
+msgid "Successfully logged out."
+msgstr "Deslogado com sucesso."
+
+#: apps/authentication/views.py:105
+msgid "Welcome to my site."
+msgstr "Bem vindo ao meu site."
